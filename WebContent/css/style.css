@@ -2,7 +2,8 @@
 
 body {
     coler: #333333;
-    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+    font-family: "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", Helvetica,
+        Arial, sans-serif;
 }
 
 #header {
@@ -97,10 +98,11 @@ table#employee_list td {
 }
 
 tr.row1 {
-        background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
+
 tr.row0 {
-        background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 select {
@@ -139,6 +141,7 @@ table#report_list .report_name {
     width: 20%;
     padding: 10px 2%;
 }
+
 table#report_list .report_date {
     width: 20%;
 }
@@ -149,4 +152,9 @@ table#report_list .report_title {
 
 table#report_list .report_action {
     width: 13%;
+}
+
+pre {
+    font-family: "Hiragino Kaku Gothic Pro", Meiryo, "MS PGothic", Helvetica,
+        Arial, sans-serif;
 }
