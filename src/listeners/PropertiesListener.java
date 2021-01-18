@@ -28,13 +28,13 @@ public class PropertiesListener implements ServletContextListener {
     /**
      * @see ServletContextListener#contextDestroyed(ServletContextEvent)
      */
-    public void contextDestroyed(ServletContextEvent arg0)  {
+    public void contextDestroyed(ServletContextEvent arg0) {
     }
 
     /**
      * @see ServletContextListener#contextInitialized(ServletContextEvent)
      */
-    public void contextInitialized(ServletContextEvent arg0)  {
+    public void contextInitialized(ServletContextEvent arg0) {
         ServletContext context = arg0.getServletContext();
 
         String path = context.getRealPath("/META-INF/application.properties");
@@ -45,12 +45,13 @@ public class PropertiesListener implements ServletContextListener {
             is.close();
 
             Iterator<String> pit = properties.stringPropertyNames().iterator();
-            while(pit.hasNext()) {
+            while (pit.hasNext()) {
                 String pname = pit.next();
                 context.setAttribute(pname, properties.getProperty(pname));
             }
-        } catch(FileNotFoundException e) {
-        } catch(IOException e) {}
+        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
+        }
     }
 
 }
